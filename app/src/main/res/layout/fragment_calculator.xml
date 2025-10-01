@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp">
+
+    <EditText
+        android:id="@+id/editNumber1"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="Enter Number 1"
+        android:inputType="numberDecimal|numberSigned"
+        android:textSize="16sp"
+        android:padding="16dp"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/editNumber2"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="Enter Number 2"
+        android:inputType="numberDecimal|numberSigned"
+        android:textSize="16sp"
+        android:padding="16dp"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginBottom="32dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginEnd="16dp">
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:text="+"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:background="@drawable/button_background"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/btnMultiply"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:text="×"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:background="@drawable/button_background" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnSubtract"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:text="-"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:background="@drawable/button_background"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/btnDivide"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:text="÷"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:background="@drawable/button_background" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
